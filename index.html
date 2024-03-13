@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian&family=Noto+Serif+Georgian&family=Varela+Round&display=swap"
+            rel="stylesheet"
+        />
+        <title>Eng-to-Ge</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="foreground">
+                <div>
+                    <img
+                        id="logo"
+                        src="Photos/431614215_325749727172663_1267312856665379915_n-07.svg"
+                        alt="logo"
+                    />
+                </div>
+                <h1>Convert English letters to Georgian</h1>
+                <h3 id="h3-unconverted" class="unconverted">
+                    Type/Paste text in English
+                </h3>
+                <i class="fa-solid fa-xmark" id="xmark"></i>
+                <span
+                    id="not-converted"
+                    class="span unconverted"
+                    contenteditable
+                    spellcheck="false"
+                ></span>
+                <i id="translate" class="fa-solid fa-arrows-rotate fa-2x"></i>
+                <h3 id="h3-converted">Converted text</h3>
+                <span id="converted" class="span" contenteditable></span>
+                <i class="fa-solid fa-copy copyButton"></i>
+                <div id="threshold"></div>
+            </div>
+        </div>
+
+        <script
+            src="https://kit.fontawesome.com/4273e1ee13.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
