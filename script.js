@@ -242,24 +242,6 @@ span.addEventListener("input", () => {
         ) + "px";
 });
 
-// //////////////////////////////ChatGPT's code
-// // Create a new ResizeObserver instance
-// const resizeObserver = new ResizeObserver((entries) => {
-//     for (let entry of entries) {
-//         // Get the new size of the notConverted element
-//         const { width, height } = entry.contentRect;
-
-//         responsive();
-
-//         // Update your size variable or perform any desired actions
-//         console.log("New Size:", width, "x", height);
-//     }
-// });
-
-// // Start observing the span element for size changes
-// resizeObserver.observe(notConverted);
-// ////////////////////////////////
-
 xmark.addEventListener("click", () => {
     notConverted.textContent = "";
     xmark.style.display = "none";
